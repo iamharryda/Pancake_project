@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+  overscroll-behavior: none;
+}
+
+body {
+  font-family:"Caudex", serif;
+  background-color: #051923;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  /* border: 2px solid blue; */
+}
+
+.name-input{
+  margin-bottom: 20px;
+}
+
+.name-input input{
+  width: 60%;
+  height: 2rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  backdrop-filter: blur(40px);
+  width: 80%;
+  /* border: 2px solid tomato; */
+}
+
+.image-container {
+  position: relative;
+  flex: 1;
+  height: 100%;
+}
+
+.image-container img {
+  object-fit: cover;
+    height: 100%;
+    /* display: flex; */
+    width: 100%;
+    /* max-width: 400px; */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-container {
+  flex: 1;
+  padding: 20px;
+  /* border: 2px solid gray; */
+}
+
+.price-banner {
+  position: absolute;
+  top: 20px;
+  left: 80%;
+  transform: translateX(-50%);
+  background-color: #000000;
+  color: white;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* CSS */
+.btn {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #FF7E31, #E62C03);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  z-index: 9;
+  border: 0;
+  transition: box-shadow .2s;
+}
+
+.btn:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 5px 10px;
+}
+
+
+.show-info {
+  display: none;
+  width: 50%;
+  padding-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    background: #E62C03;
+  }
+}

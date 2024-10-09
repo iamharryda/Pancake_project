@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pancake Maker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="container">
+      
+      <div class="image-container">
+        <img src="pancake.jpeg" alt="Delicious pancakes" />
+        <div class="price-banner"><span id="totalPrice">$5</span></div>
+      </div>
+      <div class="form-container">
+        <h2>Customize Your Pancake </h2>
+        <div class="name-input">
+          <input type="text" name="" id="username" placeholder="Name please">
+        </div>
+        <div class="customization-section">
+          <label for="type">Choose your pancake type:</label>
+          <select id="type">
+            <option value="5">Classic - $5</option>
+            <option value="6">Chocolate - $6</option>
+            <option value="7">Blueberry - $7</option>
+          </select>
+        </div>
+        <div class="customization-section">
+          <p>Select your toppings ($1 each):</p>
+          <input type="checkbox" id="nuts" value="1" />Nuts<br />
+          <input type="checkbox" id="bananas" value="1" />Bananas<br />
+          <input type="checkbox" id="syrup" value="1" />Syrup<br />
+        </div>
+        <div class="customization-section">
+          <p>Add extras:</p>
+          <input type="checkbox" id="whippedCream" value="2" />Whipped Cream -
+          $2<br />
+          <input type="checkbox" id="iceCream" value="3" />Ice Cream - $3<br />
+        </div>
+        <div class="customization-section">
+          <p>Delivery options:</p>
+          <input type="radio" id="eat_in" name="delivery" value="0" />Eat In<br />
+          <input type="radio" id="pick_up" name="delivery" value="0" />Pick Up<br />
+          <input type="radio" id="delivery" name="delivery" value="5" />Home Delivery ($5)<br />
+         
+        <div class="price-display">
+          <h3>Total Price: <span id="totalPrice">$5</span></h3>
+        </div>
+        <div class="see-order">
+          <button class="btn">See Order</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="show-info">
+      <h2>Here is your information :)</h2>
+      <p>Name: <span id="display-name"></span></p>
+      <p>Pancake type: <span id="display-cake"></span> </p>
+      <p>Selected toppings: <span id="top"></span></p>
+      <p>Selected extras: <span id="extraa"></span> </p>
+      <p>Delivery method:  <span id="deliverya"></span></p>
+      <h3>Total Price: <span id="totalPrice2"></span></h3>
+
+      <button class="btn">Back to Order</button>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
